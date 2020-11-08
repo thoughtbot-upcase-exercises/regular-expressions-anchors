@@ -106,4 +106,8 @@ describe "matching_the_word_and" do
   it "does not match 'demand'" do
     expect(Anchors.new.matching_the_word_and).not_to match "i demand to see the papers"
   end
+  
+  it "does not match 'andrew'" do
+    expect(Anchors.new.matching_the_word_and).not_to match "i saw a merry andrew"
+  end
 end
